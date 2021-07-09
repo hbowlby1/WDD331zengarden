@@ -11,7 +11,7 @@ header h1 {
   font-size: 55px;
   color: $veryDarkBlue;
   margin: 25px;
-   font-weight: lighter;
+  font-weight: lighter;
 }
 header h2 {
   font-family: $secondaryFont;
@@ -20,22 +20,27 @@ header h2 {
   font-weight: lighter;
   font-size: 30px;
 }
-.summary {
+.summary,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
   font-family: $primaryFont;
   margin: 15px;
-  padding: 15px; 
-  background-color: white; 
+  padding: 15px;
+  background-color: white;
   box-shadow: 10px 5px 5px gray;
-  text-align:center; 
+  text-align: center;
   border: 2px solid $lightBlue;
 }
 .preamble {
   font-family: $primaryFont;
   margin: 15px;
-  padding: 15px; 
-  background-color: white; 
+  padding: 15px;
+  background-color: white;
   box-shadow: 10px 5px 5px gray;
-  text-align:center; 
+  text-align: center;
   border: 2px solid $lightBlue;
 }
 
@@ -45,5 +50,3 @@ h3 {
   font-size: 25px;
   color: $veryDarkBlue;
 }
-
-  
