@@ -235,8 +235,8 @@ footer {
   }
 
   .main {
-    margin: 0 0 0 40%;
-    width: 50%;
+    float: right;
+    width: 65%;
     padding: 20px;
     background-color: $background;
     text-align: center;
@@ -283,5 +283,15 @@ footer {
     100% {
       background-position: 500%;
     }
+  }
+
+  .navigation a, li :hover{
+    background-color: $lightGreen;
+    font-size: 24px;
+    transition: font-size .5s;
+  }
+
+  p{
+    line-height: 1.5;
   }
 }

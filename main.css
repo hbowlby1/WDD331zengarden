@@ -277,8 +277,8 @@ h2 {
     }
   }
   .main {
-    margin: 0 0 0 40%;
-    width: 50%;
+    float: right;
+    width: 65%;
     padding: 20px;
     background-color: #ece3dc;
     text-align: center;
@@ -326,6 +326,15 @@ footer {
     100% {
       background-position: 500%;
     }
+  }
+  .navigation a, li :hover {
+    background-color: #82c6a3;
+    font-size: 24px;
+    transition: font-size 0.5s;
+  }
+
+  p {
+    line-height: 1.5;
   }
 }
 
