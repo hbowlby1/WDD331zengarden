@@ -235,6 +235,17 @@ h1 {
   text-shadow: 20px 10px 10px #909090;
 }
 
+a {
+  color: #2ea7be;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #82c6a3;
+  font-size: 18px;
+  transition: font-size 0.5s;
+}
+
 .sidebar {
   background-color: #ece3dc;
 }
@@ -279,6 +290,50 @@ footer {
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
+.participation p::after {
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #ece3dc;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.requirements p::after {
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #ece3dc;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.explanation p::after {
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #ece3dc;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.preamble p::after {
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #ece3dc;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
 @media screen and (min-width: 767px) {
   html {
     background: url(imgs/backgroundPhoto.jpg) no-repeat center center fixed;
@@ -304,7 +359,7 @@ footer {
 
   .main {
     float: right;
-    width: 65%;
+    width: 60%;
     padding: 20px;
     background-color: #ece3dc;
     text-align: center;
@@ -328,8 +383,8 @@ footer {
   }
 
   .navigation a, li :hover {
-    background-color: #82c6a3;
-    font-size: 24px;
+    color: #82c6a3;
+    font-size: 22px;
     transition: font-size 0.5s;
   }
 

@@ -137,7 +137,18 @@ table {
 //header code and body code, feel free to move this.
 @import "partials/header.scss";
 
+//links
 
+a{
+  color: $lightBlue;
+  text-decoration: none;
+}
+
+a:hover{
+    color: $lightGreen;
+    font-size: 18px;
+    transition: font-size .5s;
+}
 
 //aside section
 
@@ -189,8 +200,53 @@ footer {
   box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
+.participation p::after{
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: $background;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.requirements p::after{
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: $background;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.explanation p::after{
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: $background;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
+
+.preamble p::after{
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: $background;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  padding: 10px;
+}
 
 
+
+//beginning of large screen
 @media screen and (min-width: 767px) {
   //body
 
@@ -219,7 +275,7 @@ footer {
 
   .main {
     float: right;
-    width: 65%;
+    width: 60%;
     padding: 20px;
     background-color: $background;
     text-align: center;
@@ -243,8 +299,8 @@ footer {
   }
 
   .navigation a, li :hover{
-    background-color: $lightGreen;
-    font-size: 24px;
+    color: $lightGreen;
+    font-size: 22px;
     transition: font-size .5s;
   }
 
