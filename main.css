@@ -189,6 +189,52 @@ h3 {
   color: #0176b1;
 }
 
+header h2 {
+  font-family: "Permanent Marker", cursive;
+  color: #2EA7BE;
+  font-style: oblique;
+  font-weight: lighter;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #2EA7BE, #fff, #0176B1);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+h1,
+h2 {
+  animation-duration: 0.9s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+h1 {
+  text-shadow: 20px 10px 10px #909090;
+}
+
 .sidebar {
   background-color: #ece3dc;
 }
@@ -256,26 +302,6 @@ footer {
     display: inline;
   }
 
-  h1 {
-    text-shadow: 20px 10px 10px #909090;
-  }
-
-  h1,
-h2 {
-    animation-duration: 0.9s;
-    animation-name: slidein;
-  }
-
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
   .main {
     float: right;
     width: 65%;
@@ -301,32 +327,6 @@ footer {
     height: 50%;
   }
 
-  header h2 {
-    font-family: "Permanent Marker", cursive;
-    color: #2EA7BE;
-    font-style: oblique;
-    font-weight: lighter;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 2em;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(90deg, #2EA7BE, #fff, #0176B1);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 4s linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  }
-
-  @keyframes animate {
-    0% {
-      background-position: -500%;
-    }
-    100% {
-      background-position: 500%;
-    }
-  }
   .navigation a, li :hover {
     background-color: #82c6a3;
     font-size: 24px;
